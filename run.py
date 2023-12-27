@@ -22,7 +22,7 @@ mail.init_app(app)
 
 @app.route('/')
 def index():
-    msg = Message('Hello', recipients=['kalupgk@gmail.com'])
+    msg = Message('Hello', recipients=['<insert-your-receiver-email>'])
     msg.body = 'Hello Flask message sent from Flask-Mail'
     mail.send(msg)
     return 'Message Sent'
